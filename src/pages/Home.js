@@ -15,79 +15,112 @@ const Home = () => {
             available, the count of missing fields, and the number of tools edited using TRMS.
           </p>
         </div>
+        <div className="search-field">
 
-        <div className="searh-field">
-          <input type="text" name="search-field" id="search-field" placeholder="Search Tool Here" autofocus></input>
-          {/* <input type="submit" name="submit_search" id="submit_search">Submit</input> */}
-          <button id="submit" name="submit_search">Search</button>
 
+          <div className="input-group">
+            <input
+              className="form-control"
+              type="text"
+              placeholder="Search for a tool"
+              onChange=""
+
+            />
+            <div className="button-container">
+              <button className="" onClick="" type="button">
+                Search
+              </button>
+              <button className="" onClick="showAll" type="button">
+                Reset
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div className="tools-list">
+        <div className="sample-tools">
+          <h1>Choose Tool to Edit</h1>
+        </div>
+
+        <div className="card-container">
+          <div class="card">
+
+            <div class="title">Translate</div>
+            <h3 >Missing fields</h3>
+            <div className="missing-fields">
+              <ul>
+                <li>replaced_by</li>
+                <li>for_wikis</li>
+                <li>icon</li>
+              </ul>
+            </div>
+
+            <a href="#" className="btn">Provide Data</a>
+
+          </div>
+
+          <div class="card">
+
+            <div class="title">Depictor</div>
+
+            <h3>Missing fields</h3>
+            <div className="missing-fields">
+              <ul>
+                <li>privacy_policy_url</li>
+                <li>for_wikis</li>
+                <li>api_url</li>
+              </ul>
+            </div>
+
+            <a href="#" class="btn">Provide Data</a>
+
+          </div>
+        
+
+         <div class="card">
+          <div class="title">QSML</div>
+          <h3>Missing fields</h3>
+          <div className="missing-fields">
+            <ul>
+              <li>feedback_url</li>
+              <li>user_docs_url</li>
+              <li>api_url</li>
+            </ul>
+          </div>
+
+          <a href="#" class="btn">Provide Data</a>
+         </div>
+
+         <div class="card">
+          <div class="title">QSML</div>
+          <h3>Missing fields</h3>
+          <div className="missing-fields">
+            <ul>
+              <li>feedback_url</li>
+              <li>user_docs_url</li>
+              <li>api_url</li>
+            </ul>
+          </div>
+
+          <a href="#" class="btn">Provide Data</a>
+         </div>
+
+        </div> 
+
+
+
+
       </div>
 
 
 
 
-      <div className="sampleTools">
-        <h1>Choose and Edit Tool</h1>
-        <div className="card--container">
-          <div className="card">
-            <div className="face1 face">
-              <div className="content">
-                <span className="starts">
-                  <p className="description">Tool Type Missing</p>
-                </span>
-              </div>
-            </div>
-            <div className="face face2">
-              <h2>Depictor</h2>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="face1 face">
-              <div className="content">
-                <span className="starts">
-                  <p className="description">User Docs Url Missing</p>
-                </span>
-              </div>
-            </div>
-            <div className="face face2">
-              <h2>Mine Field</h2>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="face1 face">
-              <div className="content">
-                <span className="starts">
-                  <p className="description">Repository Url Missing</p>
-                </span>
-              </div>
-            </div>
-            <div className="face face2">
-              <h2>Tinklify</h2>
-            </div>
-          </div>
-          <div className="card">
-            <div className="face1 face">
-              <div className="content">
-                <span className="starts">
-                  <p className="description">Tool Icon Missing</p>
-                </span>
-              </div>
-            </div>
-
-
-
-            <div className="face face2">
-              <h2>Abdul</h2>
-            </div>
-          </div> 
-        </div>
-      </div>
     </div>
 
-  
+
+
+
 
 
 

@@ -7,7 +7,7 @@ const Navbar = () => (
     <NavLink to="/">
       <div className="nav-logo">
         <img className="toolhub-logo" src={logo} alt="toolhub logo" />
-        <h1 className="logo-title"><abbr title="Toolhub Record Management System">TRM</abbr></h1>
+        <h1 className="logo-title"><abbr title="Toolhub Record Management System">TRMS</abbr></h1>
       </div>
     </NavLink>
 

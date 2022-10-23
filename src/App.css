@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,23 +15,22 @@
 body{
   padding:1%;
   background-color: #f5f5f5;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 1em;
   font-family: 'Roboto', sans-serif;
 }
 
 .nav-bar {
   margin: 0 auto;
-  padding: 10px 0;
-  padding-bottom: 0;
   display: flex;
   justify-content: space-between; 
   align-items: center;
+  border-bottom: 2px solid  rgb(4, 5, 53);;
   width: 100%;
   font-size: 1.5rem;
   flex-wrap: wrap;
   justify-items: center;
-  box-sizing: border-box;
-  border-bottom: 2px solid #000036 ;
+   
 }
 
 .nav-bar .logo-title {
@@ -34,9 +38,6 @@ body{
   line-height: 3;
 }
 
-.nav-bar .nav-bar-links{
-  font-size: 15rem;
-}
 
 .nav-logo {
   display: flex;
@@ -44,16 +45,16 @@ body{
 }
 
 .toolhub-logo {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .logo-title {
+  color: rgb(4, 5, 53);
+  margin-left: 1em;
   font-size: 1.5rem;
-  font-weight: 700;
-  color: #282828;
-  margin-left: 1rem;
- 
+  font-weight: 800;
+
 }
 
 .nav-bar-links {
@@ -61,38 +62,42 @@ body{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  
-  padding: 15px 15px;
 }
 
 .nav-link {
- 
  
   font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 2px;
   margin: 0 15px;
-  text-decoration: underline;
+
 }
 
 .active {
-  color: burlywood;
+  color: rgb(4, 5, 53);
+  text-decoration: underline;
 }
 
 .inactive {
   text-decoration: none;
 }
 
-.home {
-  margin-top: 0;
+.home .top{
+  margin-top: 20px;
+  border:2px solid blue;
 }
 .home .top .trms_intro{
 
   float:left;
   width: 50%;
+  border:2px solid red;
+ 
 }
+
+
 .home .trms_intro h2{
-  font-size: 1.5rem;
+  font-size: 1.5em;
+  color: rgb(4, 5, 53);;
   
 }
 
@@ -104,19 +109,68 @@ body{
   
 }
 
-.home .top .searh-field {
-  margin: 2rem;
-  padding:20px;
+.home .top .search-field {
+  
+  /* padding:100px; */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  /* border: 2px solid red; */
-  flex-wrap: wrap;
-  justify-items: center;
+  justify-content: center;
+  border: 2px solid red;
+  align-content: center;
   width: 50%;
+  /* flex-wrap: wrap;
+  justify-items: center;
+  width: 50%; */
 
 }
 
-.home .searh-field input{
+.input-group {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2%;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 30%;
+  padding: 2%;
+  border-color: rgb(4, 5, 53);
+
+}
+
+/* input[type="text"] {
+  text-align: center;
+  
+} */
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 30%;
+  padding: 2%;
+  margin-left: 10px;
+  border-radius: 10px;
+  font:inherit;
+  border-color: rgb(4, 5, 53);
+}
+
+button:hover{
+
+  color : whitesmoke;
+  /* background-color: #2088ff; */
+  background-color: rgb(4, 5, 53);
+}
+
+.home .searh-field form-control{
   height: 50px;
   border-radius: 20px;
   width:70%;
@@ -124,126 +178,115 @@ body{
   font-size: inherit;
 }
 
-.home .searh-field input[type="text"] {
-  float:right;
-  clear: none;
-}
 
 
 
-.home .searh-field button{
-  height: 50px;
-  width: 20%;
-  border-radius: 20px;
-  font-size: inherit;
-}
 
-.home .searh-field button:hover{
-  color : whitesmoke;
-  background-color: #2088ff;
-}
-.top {
-  justify-content: space-between;
-}
 
-.home .sampleTools h1{
+.home .sample-tools h1{
   margin-top: 100px;
   margin-bottom: 50px;
+  font-size: 1.5em;
+  color: rgb(4, 5, 53);
+}
+/* new css carf */
+
+
+
+.card {
+  background: #1F2124;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 50px 20px 20px 20px;
+  /* width: calc(33.3333% - 40px); */
+  width: 300px;
+  height: 300px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  float: left;
 }
 
-.card--container {
+
+.card-container {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 5px;
+  border: 2px solid red;
 }
 
-.card {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  background: #6b0000;
-  border-radius: 15px;
+
+
+
+
+
+.card .title {
+  font-size: 25px;
 }
 
-.face {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.face1 {
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-.description {
-  background-color: #fffc00;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.face2 {
-  transition: 0.5s;
-}
-
-.face2 h2 {
+.card .missing-fields ul {
   padding: 0;
-  font-size: 10em;
-  color: #fff;
-  transition: 0.5s;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  margin: 20px 0 50px 0;
+  list-style-type: none;
 }
 
-.card:hover .face.face2 {
-  height: 60px;
+
+.card .missing-fields ul li {
+  margin: 10px 0;
+  font-size: 14px;
 }
 
-.card .face.face2 h2 {
-  font-size: 4em;
+.card .missing-fields ul li span {
+  border-bottom: 2px dotted #F6B352;
 }
 
-.card:nth-child(1) .face.face2 {
-  background: cyan;
-  border-radius: 15px;
+
+
+.card .btn {
+  display: block;
+  background: #F6B352;
+  color: white;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.9);
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+
 }
 
-.card:nth-child(2) .face.face2 {
-  background-image:
-    linear-gradient(
-      40deg,
-      #d7d7c0 0%,
-      #015593 45%,
-      #00fffc 100%
-    );
-  border-radius: 15px;
+
+
+
+.btn:hover{
+  background: rgb(4, 5, 53);
 }
 
-.card:nth-child(3) .face.face2 {
-  background-image:
-    linear-gradient(
-      40deg,
-      #d7d7c0 0%,
-      #015593 45%,
-      #00fffc 100%
-    );
-  border-radius: 10px;
+
+
+/*Leader board CSS */ 
+.lboard-container{
+  padding: 1%;
 }
 
-.card:nth-child(4) .face.face2 {
-  background-image:
-    linear-gradient(
-      40deg,
-      #d7d7c0 0%,
-      #015593 45%,
-      #00fffc 100%
-    );
-  border-radius: 10px;
+.lboard-table {
+  /* margin : 0 auto; */
+  margin-top: 50px;
+  margin-left: 300px;
+}
+
+.lboard-container .lboard-header p{
+  margin: 0.5em;;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
 }
