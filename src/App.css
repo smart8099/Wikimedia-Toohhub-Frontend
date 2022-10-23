@@ -290,3 +290,38 @@ td, th {
   padding: 0.5rem;
   text-align: left;
 }
+
+
+/*record board */
+.rboard-card {
+  background: #1F2124;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 50px 20px 20px 20px;
+  /* width: calc(33.3333% - 40px); */
+  width: 350px;
+  height: 300px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  float: left;
+}
+
+.rcard-container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5px;
+  border: 2px solid red;
+}
+
+
+.rboard-card .title {
+  font-size: 25px;
+}
+
+.rboard-card .data{
+  margin: 1.5em;
+  font-size: 3rem;
+}
