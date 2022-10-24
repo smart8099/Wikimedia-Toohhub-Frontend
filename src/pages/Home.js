@@ -1,4 +1,5 @@
 import React from "react";
+import Search  from "./Search";
 
 
 const Home = () => {
@@ -15,26 +16,8 @@ const Home = () => {
             available, the count of missing fields, and the number of tools edited using TRMS.
           </p>
         </div>
-        <div className="search-field">
-
-
-          <div className="input-group">
-            <input
-              className="form-control"
-              type="text"
-              placeholder="Search for a tool"
-              onChange=""
-
-            />
-            <div className="button-container">
-              <button className="" onClick="" type="button">
-                Search
-              </button>
-              <button className="" onClick="showAll" type="button">
-                Reset
-              </button>
-            </div>
-          </div>
+        <div className="search-container">
+          <Search />
         </div>
       </div>
 
@@ -44,9 +27,9 @@ const Home = () => {
         </div>
 
         <div className="card-container">
-          <div class="card">
+          <div className="card">
 
-            <div class="title">Translate</div>
+            <div className="title">Translate</div>
             <h3 >Missing fields</h3>
             <div className="missing-fields">
               <ul>
@@ -60,9 +43,9 @@ const Home = () => {
 
           </div>
 
-          <div class="card">
+          <div className="card">
 
-            <div class="title">Depictor</div>
+            <div className="title">Depictor</div>
 
             <h3>Missing fields</h3>
             <div className="missing-fields">
@@ -73,40 +56,40 @@ const Home = () => {
               </ul>
             </div>
 
-            <a href="#" class="btn">Provide Data</a>
+            <a href="#" className="btn">Provide Data</a>
 
           </div>
-        
 
-         <div class="card">
-          <div class="title">QSML</div>
-          <h3>Missing fields</h3>
-          <div className="missing-fields">
-            <ul>
-              <li>feedback_url</li>
-              <li>user_docs_url</li>
-              <li>api_url</li>
-            </ul>
+
+          <div className="card">
+            <div className="title">QSML</div>
+            <h3>Missing fields</h3>
+            <div className="missing-fields">
+              <ul>
+                <li>feedback_url</li>
+                <li>user_docs_url</li>
+                <li>api_url</li>
+              </ul>
+            </div>
+
+            <a href="#" className="btn">Provide Data</a>
           </div>
 
-          <a href="#" class="btn">Provide Data</a>
-         </div>
+          <div className="card">
+            <div className="title">Minefield</div>
+            <h3>Missing fields</h3>
+            <div className="missing-fields">
+              <ul>
+                <li>feedback_url</li>
+                <li>user_docs_url</li>
+                <li>api_url</li>
+              </ul>
+            </div>
 
-         <div class="card">
-          <div class="title">QSML</div>
-          <h3>Missing fields</h3>
-          <div className="missing-fields">
-            <ul>
-              <li>feedback_url</li>
-              <li>user_docs_url</li>
-              <li>api_url</li>
-            </ul>
+            <a href="#" className="btn">Provide Data</a>
           </div>
 
-          <a href="#" class="btn">Provide Data</a>
-         </div>
-
-        </div> 
+        </div>
 
 
 
