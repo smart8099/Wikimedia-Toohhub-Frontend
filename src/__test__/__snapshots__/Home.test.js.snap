@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="top"
+  >
+    <div
+      className="trms_intro"
+    >
+      <h2>
+        Toolhub Record Management System (TRM)
+      </h2>
+      <p>
+        TRMS provides an interface to edit or provide information for wikimedia tools. TRMS also provides statistics about the current tools available, the count of missing fields, and the number of tools edited using TRMS.
+      </p>
+    </div>
+    <div
+      className="search-container"
+    >
+      <div
+        className="search-field"
+      >
+        <div
+          className="input-group"
+        >
+          <input
+            className="form-control"
+            onChange={[Function]}
+            placeholder="Search for a tool"
+            type="text"
+          />
+          <div
+            className="button-container"
+          >
+            <button
+              className=""
+              onClick={[Function]}
+              type="button"
+            >
+              Search
+            </button>
+            <button
+              className=""
+              onClick={[Function]}
+              type="button"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="tools-list"
+  >
+    <div
+      className="sample-tools"
+    >
+      <h1>
+        Choose Tool to Edit
+      </h1>
+    </div>
+    <div
+      className="card-container"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="title"
+        >
+          Translate
+        </div>
+        <h3>
+          Missing fields
+        </h3>
+        <div
+          className="missing-fields"
+        >
+          <ul>
+            <li>
+              replaced_by
+            </li>
+            <li>
+              for_wikis
+            </li>
+            <li>
+              icon
+            </li>
+          </ul>
+        </div>
+        <a
+          className="btn"
+          href="#"
+        >
+          Provide Data
+        </a>
+      </div>
+      <div
+        className="card"
+      >
+        <div
+          className="title"
+        >
+          Depictor
+        </div>
+        <h3>
+          Missing fields
+        </h3>
+        <div
+          className="missing-fields"
+        >
+          <ul>
+            <li>
+              privacy_policy_url
+            </li>
+            <li>
+              for_wikis
+            </li>
+            <li>
+              api_url
+            </li>
+          </ul>
+        </div>
+        <a
+          className="btn"
+          href="#"
+        >
+          Provide Data
+        </a>
+      </div>
+      <div
+        className="card"
+      >
+        <div
+          className="title"
+        >
+          QSML
+        </div>
+        <h3>
+          Missing fields
+        </h3>
+        <div
+          className="missing-fields"
+        >
+          <ul>
+            <li>
+              feedback_url
+            </li>
+            <li>
+              user_docs_url
+            </li>
+            <li>
+              api_url
+            </li>
+          </ul>
+        </div>
+        <a
+          className="btn"
+          href="#"
+        >
+          Provide Data
+        </a>
+      </div>
+      <div
+        className="card"
+      >
+        <div
+          className="title"
+        >
+          Minefield
+        </div>
+        <h3>
+          Missing fields
+        </h3>
+        <div
+          className="missing-fields"
+        >
+          <ul>
+            <li>
+              feedback_url
+            </li>
+            <li>
+              user_docs_url
+            </li>
+            <li>
+              api_url
+            </li>
+          </ul>
+        </div>
+        <a
+          className="btn"
+          href="#"
+        >
+          Provide Data
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
