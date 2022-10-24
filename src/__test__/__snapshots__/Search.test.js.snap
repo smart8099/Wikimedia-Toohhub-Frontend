@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly 1`] = `
+<div
+  className="search-field"
+>
+  <div
+    className="input-group"
+  >
+    <input
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Search for a tool"
+      type="text"
+    />
+    <div
+      className="button-container"
+    >
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        Search
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        Reset
+      </button>
+    </div>
+  </div>
+</div>
+`;
