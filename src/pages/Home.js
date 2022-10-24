@@ -1,6 +1,7 @@
 import React from "react";
 import Search  from "./Search";
-
+import depictor_logo from '../assets/Icon_Maintenance.svg.png';
+import toollogo_two from '../assets/Globe.svg.png'
 
 const Home = () => {
 
@@ -9,7 +10,7 @@ const Home = () => {
     <div className="home">
       <div className="top">
         <div className="trms_intro">
-          <h2>Toolhub Record Management System (TRM)</h2>
+          <h2>Toolhub Record Management System (TRMS)</h2>
           <p>
             TRMS provides an interface to edit or provide information for
             wikimedia tools. TRMS also provides statistics about the current tools
@@ -30,7 +31,11 @@ const Home = () => {
           <div className="card">
 
             <div className="title">Translate</div>
-            <h3 >Missing fields</h3>
+           
+            <div className="tool-icon">
+              <img className="icon" src={toollogo_two} alt="Depictor logo" />
+            </div>
+            <h3 className="m-title">Missing fields</h3>
             <div className="missing-fields">
               <ul>
                 <li>replaced_by</li>
@@ -47,7 +52,11 @@ const Home = () => {
 
             <div className="title">Depictor</div>
 
-            <h3>Missing fields</h3>
+            
+            <div className="tool-icon">
+              <img className="icon" src={depictor_logo} alt="Minefield logo" />
+            </div>
+            <h3 className="m-title">Missing fields</h3>
             <div className="missing-fields">
               <ul>
                 <li>privacy_policy_url</li>
@@ -63,7 +72,12 @@ const Home = () => {
 
           <div className="card">
             <div className="title">QSML</div>
-            <h3>Missing fields</h3>
+            <div className="tool-icon">
+              <img className="icon" src={toollogo_two} alt="QSML logo" />
+            </div>
+            <h3 className="m-title">Missing fields</h3>
+           
+             
             <div className="missing-fields">
               <ul>
                 <li>feedback_url</li>
@@ -77,7 +91,11 @@ const Home = () => {
 
           <div className="card">
             <div className="title">Minefield</div>
-            <h3>Missing fields</h3>
+            
+            <div className="tool-icon">
+              <img className="icon" src={depictor_logo} alt="Minefield logo" />
+            </div>
+            <h3 className="m-title">Missing fields</h3>
             <div className="missing-fields">
               <ul>
                 <li>feedback_url</li>
@@ -85,6 +103,7 @@ const Home = () => {
                 <li>api_url</li>
               </ul>
             </div>
+            
 
             <a href="#" className="btn">Provide Data</a>
           </div>

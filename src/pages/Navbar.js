@@ -13,13 +13,13 @@ const Navbar = () => (
 
     <div className="nav-bar-links">
       <NavLink to="/"  className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')} end>
-        Home
+        HOME
       </NavLink>
       <NavLink to="/leaderboard" className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}>
-        LeaderBoard
+        LEADERBOARD
       </NavLink>
       <NavLink to="/recordsboard" className={({ isActive }) => (isActive ? 'active nav-link' : 'inactive nav-link')}>
-        RecordsBoard
+        RECORDSBOARD
       </NavLink>
     </div>
   </nav>

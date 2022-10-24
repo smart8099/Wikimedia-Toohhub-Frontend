@@ -1,4 +1,6 @@
 import './App.css';
+import './lboard.css';
+import './rboard.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar  from './pages/Navbar';

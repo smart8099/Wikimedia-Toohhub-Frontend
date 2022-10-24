@@ -16,7 +16,7 @@ const Search = () => {
     const handleSearch = (e) => {
         try {
             e.preventDefault();
-            if (!(searchValue == '')) {
+            if (!(searchValue === '')) {
                 const filteredTools = toolsData.filter(
                     (tool) => tool.name.toLowerCase().includes(
                         searchValue.toLowerCase(),
