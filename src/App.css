@@ -230,6 +230,7 @@ button:hover{
   display: block;
   background-color: rgb(4, 5, 53);
   color: white;
+  width: 100%;
   padding: 15px 20px;
   margin: 20px 0;
   border-radius: 5px;

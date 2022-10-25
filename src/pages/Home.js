@@ -43,8 +43,8 @@ const Home = () => {
                 <li>icon</li>
               </ul>
             </div>
+            <button className="btn"  type="button">Provide Data</button>
 
-            <a href="#" className="btn">Provide Data</a>
 
           </div>
 
@@ -65,7 +65,7 @@ const Home = () => {
               </ul>
             </div>
 
-            <a href="#" className="btn">Provide Data</a>
+            <button className="btn"  type="button">Provide Data</button>
 
           </div>
 
@@ -86,7 +86,7 @@ const Home = () => {
               </ul>
             </div>
 
-            <a href="#" className="btn">Provide Data</a>
+            <button className="btn"  type="button">Provide Data</button>
           </div>
 
           <div className="card">
@@ -105,7 +105,7 @@ const Home = () => {
             </div>
             
 
-            <a href="#" className="btn">Provide Data</a>
+            <button className="btn"  type="button">Provide Data</button>
           </div>
 
         </div>
