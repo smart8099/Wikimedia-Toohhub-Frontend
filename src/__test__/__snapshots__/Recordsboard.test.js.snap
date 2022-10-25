@@ -2,32 +2,32 @@
 
 exports[`RecordsBoard renders correctly 1`] = `
 <div
-  className="under--construction"
+  className="rboard"
 >
   <div
     className="rcard-container"
   >
     <div
-      class="rboard-card"
+      className="rboard-card"
     >
       <div
-        class="title"
+        className="title"
       >
-        Total number of missing tools
+        Total Number of tools in TRMS
       </div>
       <h1
         className="data"
       >
-        1798
+        1580
       </h1>
     </div>
     <div
-      class="rboard-card"
+      className="rboard-card"
     >
       <div
-        class="title"
+        className="title"
       >
-        Total Number of tools with Missing information
+        Number of tools with Missing information
       </div>
       <h1
         className="data"
@@ -36,10 +36,24 @@ exports[`RecordsBoard renders correctly 1`] = `
       </h1>
     </div>
     <div
-      class="rboard-card"
+      className="rboard-card"
     >
       <div
-        class="title"
+        className="title"
+      >
+        % of tools with missing information
+      </div>
+      <h1
+        className="data"
+      >
+        23%
+      </h1>
+    </div>
+    <div
+      className="rboard-card"
+    >
+      <div
+        className="title"
       >
         Number of tools edited with TRMS
       </div>
@@ -49,6 +63,15 @@ exports[`RecordsBoard renders correctly 1`] = `
         540
       </h1>
     </div>
+  </div>
+  <div
+    className="data-stats"
+  >
+    <canvas
+      height={400}
+      role="img"
+      width={300}
+    />
   </div>
 </div>
 `;

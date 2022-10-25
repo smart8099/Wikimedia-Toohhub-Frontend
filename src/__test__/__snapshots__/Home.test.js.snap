@@ -11,7 +11,7 @@ exports[`Home renders correctly 1`] = `
       className="trms_intro"
     >
       <h2>
-        Toolhub Record Management System (TRM)
+        Toolhub Record Management System (TRMS)
       </h2>
       <p>
         TRMS provides an interface to edit or provide information for wikimedia tools. TRMS also provides statistics about the current tools available, the count of missing fields, and the number of tools edited using TRMS.
@@ -75,7 +75,18 @@ exports[`Home renders correctly 1`] = `
         >
           Translate
         </div>
-        <h3>
+        <div
+          className="tool-icon"
+        >
+          <img
+            alt="Depictor logo"
+            className="icon"
+            src="Globe.svg.png"
+          />
+        </div>
+        <h3
+          className="m-title"
+        >
           Missing fields
         </h3>
         <div
@@ -93,12 +104,12 @@ exports[`Home renders correctly 1`] = `
             </li>
           </ul>
         </div>
-        <a
+        <button
           className="btn"
-          href="#"
+          type="button"
         >
           Provide Data
-        </a>
+        </button>
       </div>
       <div
         className="card"
@@ -108,7 +119,18 @@ exports[`Home renders correctly 1`] = `
         >
           Depictor
         </div>
-        <h3>
+        <div
+          className="tool-icon"
+        >
+          <img
+            alt="Minefield logo"
+            className="icon"
+            src="Icon_Maintenance.svg.png"
+          />
+        </div>
+        <h3
+          className="m-title"
+        >
           Missing fields
         </h3>
         <div
@@ -126,12 +148,12 @@ exports[`Home renders correctly 1`] = `
             </li>
           </ul>
         </div>
-        <a
+        <button
           className="btn"
-          href="#"
+          type="button"
         >
           Provide Data
-        </a>
+        </button>
       </div>
       <div
         className="card"
@@ -141,7 +163,18 @@ exports[`Home renders correctly 1`] = `
         >
           QSML
         </div>
-        <h3>
+        <div
+          className="tool-icon"
+        >
+          <img
+            alt="QSML logo"
+            className="icon"
+            src="Globe.svg.png"
+          />
+        </div>
+        <h3
+          className="m-title"
+        >
           Missing fields
         </h3>
         <div
@@ -159,12 +192,12 @@ exports[`Home renders correctly 1`] = `
             </li>
           </ul>
         </div>
-        <a
+        <button
           className="btn"
-          href="#"
+          type="button"
         >
           Provide Data
-        </a>
+        </button>
       </div>
       <div
         className="card"
@@ -174,7 +207,18 @@ exports[`Home renders correctly 1`] = `
         >
           Minefield
         </div>
-        <h3>
+        <div
+          className="tool-icon"
+        >
+          <img
+            alt="Minefield logo"
+            className="icon"
+            src="Icon_Maintenance.svg.png"
+          />
+        </div>
+        <h3
+          className="m-title"
+        >
           Missing fields
         </h3>
         <div
@@ -192,12 +236,12 @@ exports[`Home renders correctly 1`] = `
             </li>
           </ul>
         </div>
-        <a
+        <button
           className="btn"
-          href="#"
+          type="button"
         >
           Provide Data
-        </a>
+        </button>
       </div>
     </div>
   </div>
