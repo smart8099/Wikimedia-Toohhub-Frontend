@@ -9,59 +9,42 @@
 }
 
 body{
-  padding:1%;
-  background-color: #f5f5f5;
+  /* padding:1%; */
+  /* background-color: #f5f5f5; */
+  background-color: white;
+  /* background-color: blue; */
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
 }
 
 /*Navbar CSS */
 .nav-bar {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: flex;
   justify-content: space-between; 
-  align-items: center;
+  
+  
   width: 100%;
 	padding: 1em;
   margin-bottom: 1em;
 	border: 1px solid #a2a2a2;
-	background-color: #f4f4f4;
+	background-color: #3366CC;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 5px;
+	border-radius: 0;
+  
 }
 
-.nav-bar .logo-title {
-  font-size: 2rem;
-  line-height: 3;
-}
-
-.nav-bar .nav-logo {
-  display: flex;
-  align-items: center;
-}
-
-.nav-logo .toolhub-logo {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-.nav-logo .logo-title {
-  color: rgb(4, 5, 53);
-  margin-left: 1em;
-  font-size: 1.5rem;
-  font-weight: 800;
-
-}
 
 .nav-bar .nav-bar-links {
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
   flex-wrap: wrap;
+  float: right;
 }
 
 .nav-link {
@@ -76,26 +59,37 @@ body{
   color: whitesmoke;
 }
 
-.nav-link .active {
-  color: rgb(4, 5, 53);
+.active {
+  
   text-decoration: underline;
+  color: rgb(4, 5, 53);
 }
 
 .inactive {
   text-decoration: none;
+  color: #FFFFFC;
 }
 
 /*Home page top section CSS */
 .home .top{
   max-width: 100%;
+  padding:1%;
   display: grid;
-  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 5px;
+  /* grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(1, 50px 1fr) 100px;
+  /* grid-template-columns : 100px 700px; */
+  grid-gap: 70px;
   
 }
 
+.home .trms_intro{
+  display: flex;
+  flex-direction: column;
+
+}
 .home .trms_intro h2{
-  font-size: 1.5em;
+  
+  font-size: 2em;
   color: rgb(4, 5, 53);;
 }
 
@@ -105,11 +99,29 @@ body{
   line-height: 1.2rem;
 }
 
+
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-logo .toolhub-logo {
+  width: 6rem;
+  height: 6rem;
+}
+
+.nav--bar--logo--title {
+  
+  color: #FFFFFC;
+  margin-left: 1em;
+  
+  font-weight: 800;
+
+}
 .home .top .search-field {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -124,9 +136,9 @@ body{
 } 
 
 input {
-  width: 100%;
-  height: 40%;
-  padding: 2%;
+  /* width: 100%;
+  height: 5%; */
+  padding: 1.5%;
   border-color: rgb(4, 5, 53);
 }
 
@@ -139,8 +151,8 @@ input {
 }
 
 button {
-  width: 30%;
-  padding: 2%;
+  width: 10em;
+  padding: 1%;
   border-radius: 10px;
   font:inherit;
   border-color: rgb(4, 5, 53);
@@ -160,6 +172,7 @@ button:hover{
 }
 
 .home .sample-tools h1{
+  padding:1%;
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 1.5em;
@@ -228,7 +241,7 @@ button:hover{
 
 .card .btn {
   display: block;
-  background-color: rgb(4, 5, 53);
+  background-color: #3366CC;
   color: white;
   width: 100%;
   padding: 15px 20px;

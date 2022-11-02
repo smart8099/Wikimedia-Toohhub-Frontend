@@ -15,6 +15,19 @@
 - JavaScript
 - React
 
+## Design Thought Process
+To design this demo application, I wrote User Stories to represent the major functionalities in the web application. Below are the User Stories I implemented:
+
+### User Stories
+> As a potential toolhub editor, I want to be able to search the tool of my choice, so I can know
+and provide data for the tool's missing fields.
+
+> As a potential toolhub editor, I want to be able to see tools with missing fields, so I can easily provide data for those tools without searching.
+
+> As a potential toolhub editor, I want to be able to see the leadersboard, so that I will know the top editors in the last 30 days.  
+
+> As a potential toolhub editor, I want to be able to see displayed statistics of toolhub, so I can have an overview of what is currently happening in toolhub.
+
 
 
 ## Getting Started

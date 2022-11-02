@@ -8,48 +8,57 @@ exports[`Home renders correctly 1`] = `
     className="top"
   >
     <div
+      className="nav-logo"
+    >
+      <img
+        alt="toolhub logo"
+        className="toolhub-logo"
+        src="Toolhub_community_logo.svg"
+      />
+    </div>
+    <div
       className="trms_intro"
     >
       <h2>
-        Toolhub Record Management System (TRMS)
+        Toolhub Record Management System
       </h2>
       <p>
-        TRMS provides an interface to edit or provide information for wikimedia tools. TRMS also provides statistics about the current tools available, the count of missing fields, and the number of tools edited using TRMS.
+        We provides an interface to edit or provide information for wikimedia missing tools. Discover statistics about the current tools available, the count of missing fields, and the number of tools edited here.
       </p>
     </div>
+  </div>
+  <div
+    className="search-container"
+  >
     <div
-      className="search-container"
+      className="search-field"
     >
       <div
-        className="search-field"
+        className="input-group"
       >
+        <input
+          className="form-control"
+          onChange={[Function]}
+          placeholder="Search for a tool"
+          type="text"
+        />
         <div
-          className="input-group"
+          className="button-container"
         >
-          <input
-            className="form-control"
-            onChange={[Function]}
-            placeholder="Search for a tool"
-            type="text"
-          />
-          <div
-            className="button-container"
+          <button
+            className=""
+            onClick={[Function]}
+            type="button"
           >
-            <button
-              className=""
-              onClick={[Function]}
-              type="button"
-            >
-              Search
-            </button>
-            <button
-              className=""
-              onClick={[Function]}
-              type="button"
-            >
-              Reset
-            </button>
-          </div>
+            Search
+          </button>
+          <button
+            className=""
+            onClick={[Function]}
+            type="button"
+          >
+            Reset
+          </button>
         </div>
       </div>
     </div>

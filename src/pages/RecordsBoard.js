@@ -44,12 +44,12 @@ const RecordsBoard = () => (
       <Bar
         data={{
           // Name of the variables on x-axies for each bar
-          labels: ["Total number of Tools", "Number of tools with missing information", "Number of tools edited with TRMS"],
+          labels: ["Total number of Tools", "Number of tools edited with TRMS"],
           datasets: [
             {
               
               label: "total number of tools edited with TRMS",
-              data: [1580, 865, 540],
+              data: [1580, 540],
               backgroundColor: ["aqua", "green", "red"],
               borderColor: ["aqua", "green", "red"],
               borderWidth: 1,
