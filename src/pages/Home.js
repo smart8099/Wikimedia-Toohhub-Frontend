@@ -1,7 +1,8 @@
 import React from "react";
-import Search  from "./Search";
+import Search from "./components/Search";
 import depictor_logo from '../assets/Icon_Maintenance.svg.png';
 import toollogo_two from '../assets/Globe.svg.png'
+import logo from '../assets/Toolhub_community_logo.svg'
 
 const Home = () => {
 
@@ -9,17 +10,23 @@ const Home = () => {
 
     <div className="home">
       <div className="top">
+        <div className="nav-logo">
+          <img className="toolhub-logo" src={logo} alt="toolhub logo" />
+        </div>
+
         <div className="trms_intro">
-          <h2>Toolhub Record Management System (TRMS)</h2>
+          <h2>Toolhub Record Management System</h2>
           <p>
-            TRMS provides an interface to edit or provide information for
-            wikimedia tools. TRMS also provides statistics about the current tools
-            available, the count of missing fields, and the number of tools edited using TRMS.
+            We provides an interface to edit or provide information for
+            wikimedia missing tools. Discover statistics about the current tools
+            available, the count of missing fields, and the number of tools edited here.
           </p>
         </div>
-        <div className="search-container">
-          <Search />
-        </div>
+
+      </div>
+
+      <div className="search-container">
+        <Search />
       </div>
 
       <div className="tools-list">
@@ -31,7 +38,7 @@ const Home = () => {
           <div className="card">
 
             <div className="title">Translate</div>
-           
+
             <div className="tool-icon">
               <img className="icon" src={toollogo_two} alt="Depictor logo" />
             </div>
@@ -43,7 +50,7 @@ const Home = () => {
                 <li>icon</li>
               </ul>
             </div>
-            <button className="btn"  type="button">Provide Data</button>
+            <button className="btn" type="button">Provide Data</button>
 
 
           </div>
@@ -52,7 +59,7 @@ const Home = () => {
 
             <div className="title">Depictor</div>
 
-            
+
             <div className="tool-icon">
               <img className="icon" src={depictor_logo} alt="Minefield logo" />
             </div>
@@ -65,7 +72,7 @@ const Home = () => {
               </ul>
             </div>
 
-            <button className="btn"  type="button">Provide Data</button>
+            <button className="btn" type="button">Provide Data</button>
 
           </div>
 
@@ -76,8 +83,8 @@ const Home = () => {
               <img className="icon" src={toollogo_two} alt="QSML logo" />
             </div>
             <h3 className="m-title">Missing fields</h3>
-           
-             
+
+
             <div className="missing-fields">
               <ul>
                 <li>feedback_url</li>
@@ -86,12 +93,12 @@ const Home = () => {
               </ul>
             </div>
 
-            <button className="btn"  type="button">Provide Data</button>
+            <button className="btn" type="button">Provide Data</button>
           </div>
 
           <div className="card">
             <div className="title">Minefield</div>
-            
+
             <div className="tool-icon">
               <img className="icon" src={depictor_logo} alt="Minefield logo" />
             </div>
@@ -103,9 +110,9 @@ const Home = () => {
                 <li>api_url</li>
               </ul>
             </div>
-            
 
-            <button className="btn"  type="button">Provide Data</button>
+
+            <button className="btn" type="button">Provide Data</button>
           </div>
 
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from 'react-test-renderer';
-import Search from '../pages/Search'
+import Search from '../pages/components/Search'
 
 describe('Search', () => {
     it('renders correctly', () => {
