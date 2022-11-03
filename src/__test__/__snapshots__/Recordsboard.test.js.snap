@@ -13,7 +13,7 @@ exports[`RecordsBoard renders correctly 1`] = `
       <div
         className="title"
       >
-        Total Number of tools in TRMS
+        Total Number of available tools
       </div>
       <h1
         className="data"
@@ -55,7 +55,7 @@ exports[`RecordsBoard renders correctly 1`] = `
       <div
         className="title"
       >
-        Number of tools edited with TRMS
+        Number of tools edited here
       </div>
       <h1
         className="data"

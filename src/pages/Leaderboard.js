@@ -3,7 +3,7 @@ import React from 'react';
 const Leaderboard = () => (
   <div className="lboard-container">
     <div className="lboard-header">
-      <h1>TRMS Leaderboard</h1>
+      <h1>Leaderboard</h1>
       <p>Below are the names of Top Editors in the last 30 days</p>
     </div>
     <div className="lboard-table">
@@ -12,7 +12,7 @@ const Leaderboard = () => (
           <tr>
             <th>Position</th>
             <th>Username</th>
-            <th>Total Number of Toools Edited</th>
+            <th>Total Number of Tools Edited</th>
           </tr>
         </thead>
         <tbody>
