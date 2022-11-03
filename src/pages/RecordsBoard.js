@@ -8,7 +8,7 @@ const RecordsBoard = () => (
     <div className="rcard-container">
       <div className="rboard-card">
 
-        <div className="title">Total Number of tools in TRMS</div>
+        <div className="title">Total Number of available tools</div>
         <h1 className="data">1580</h1>
 
       </div>
@@ -30,7 +30,7 @@ const RecordsBoard = () => (
 
 
       <div className="rboard-card">
-        <div className="title">Number of tools edited with TRMS</div>
+        <div className="title">Number of tools edited here</div>
         <h1 className="data">540</h1>
 
       </div>
@@ -44,11 +44,11 @@ const RecordsBoard = () => (
       <Bar
         data={{
           // Name of the variables on x-axies for each bar
-          labels: ["Total number of Tools", "Number of tools edited with TRMS"],
+          labels: ["Total number of Tools", "Number of tools edited here"],
           datasets: [
             {
               
-              label: "total number of tools edited with TRMS",
+              label: "total number of tools edited  here",
               data: [1580, 540],
               backgroundColor: ["aqua", "green", "red"],
               borderColor: ["aqua", "green", "red"],
